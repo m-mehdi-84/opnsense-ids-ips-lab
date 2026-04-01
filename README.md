@@ -16,7 +16,6 @@ Components:
 - OPNsense firewall/router
 - Windows Server
 - Windows 11 client
-- Optional LAN2 client used during validation/troubleshooting
 
 ---
 
@@ -43,8 +42,6 @@ Components:
       192.168.10.145              192.168.10.144
       GW: 192.168.10.1            GW: 192.168.10.1
 
-Additional lab interface kept in environment:
-- LAN2 available for separate testing/troubleshooting
 
 ---
 
@@ -53,7 +50,6 @@ Additional lab interface kept in environment:
 | Network | Subnet | Gateway | Purpose |
 |--------|--------|---------|---------|
 | LAN | 192.168.10.0/24 | 192.168.10.1 | Main internal lab network |
-| LAN2 | 192.168.20.0/24 | 192.168.20.1 | Secondary test network |
 
 ---
 
