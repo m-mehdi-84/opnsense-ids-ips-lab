@@ -20,12 +20,10 @@ The lab also highlighted an important real-world detail: traffic between devices
 - **OPNsense-VM**
 - **Server2025-VM**
 - **Win11-VM**
-- **Win11-LAN2** (already available in the environment)
 
 ### Interfaces
 - **WAN** -> Default Switch
 - **LAN** -> LAN-Switch
-- **LAN2** -> LAN2
 
 ### IP Addresses
 - **OPNsense LAN:** 192.168.10.1/24
