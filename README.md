@@ -117,27 +117,40 @@ traffic inside the same LAN does not always pass through OPNsense in a way that 
 
 ## Screenshots
 
-Add your screenshots here, for example:
+### 1. LAN Firewall Rules
+Shows the LAN firewall rules created in OPNsense, including rule order and descriptions.
 
-### Firewall Rules
-- LAN firewall rules
-- Rule order and descriptions
+![LAN Firewall Rules](images/01-firewall-rules.png)
 
-### IDS Configuration
-- Intrusion Detection settings
-- Downloaded rules
-- Policy / Rules / User defined alert rule
+### 2. Allow LAN to Server Rule
+Shows the pass rule allowing traffic from the LAN network to the Windows Server.
 
-### IDS Alert Test
-- Alert showing ICMP traffic from Win11 to OPNsense
+![Allow LAN to Server Rule](images/02-allow-lan-to-server.png)
 
-### IPS Configuration
-- Netmap (IPS) enabled
-- User defined rule changed to Drop
-- Tunable `dev.netmap.admode = 2`
+### 3. Block Server to LAN Rule
+Shows the block rule configured to restrict traffic from the Windows Server to the LAN network.
 
-### IPS Validation
-- Ping failure / request timed out when IPS was active
+![Block Server to LAN Rule](images/03-block-server-to-lan.png)
+
+### 4. IDS Settings
+Shows Intrusion Detection enabled on the LAN interface in OPNsense.
+
+![IDS Settings](images/04-ids-settings.png)
+
+### 5. User Defined IDS Rule
+Shows the custom IDS test rule used to generate an alert for ICMP traffic to OPNsense.
+
+![User Defined IDS Rule](images/05-ids-user-defined-rule.png)
+
+### 6. Netmap Tunable
+Shows the `dev.netmap.admode = 2` tunable added to make IPS work correctly in the Hyper-V virtual environment.
+
+![Netmap Tunable](images/06-netmap-tunable.png)
+
+### 7. Suricata Log File
+Shows Suricata running successfully with rule reload activity and engine startup messages.
+
+![Suricata Log File](images/07-suricata-log-file.png)
 
 ---
 
