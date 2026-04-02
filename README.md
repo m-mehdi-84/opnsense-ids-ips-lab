@@ -183,13 +183,20 @@ Includes:
 
 ## Key Insight
 
-During testing, IDS alerts were not immediately visible in the GUI while IPS was actively blocking traffic. However, multiple alerts appeared later in the logs.
+During testing, traffic sent directly to OPNsense (192.168.10.1) generated immediate IDS alerts, while similar traffic between hosts in the same LAN did not always appear instantly.
 
-This showed that detection and prevention operate together:
-- IDS continues to log suspicious activity
-- IPS blocks the traffic in real time
+This showed that visibility depends on how traffic flows through the network:
 
-This highlights the importance of reviewing logs, not just relying on real-time feedback when validating security controls.
+- Traffic to OPNsense is directly inspected
+- Traffic within the same LAN may bypass expected inspection paths
+
+Additionally, IDS continued to log activity even when IPS was blocking traffic, and alerts could appear later in the logs.
+
+This highlights the importance of understanding traffic flow and reviewing logs when validating security controls.
+
+---
+
+
 ## Future Improvements
 
 - Test IDS/IPS between separate routed networks
