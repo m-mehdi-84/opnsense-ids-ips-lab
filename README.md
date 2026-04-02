@@ -181,6 +181,15 @@ Includes:
 
 ---
 
+## Key Insight
+
+During testing, IDS alerts were not immediately visible in the GUI while IPS was actively blocking traffic. However, multiple alerts appeared later in the logs.
+
+This showed that detection and prevention operate together:
+- IDS continues to log suspicious activity
+- IPS blocks the traffic in real time
+
+This highlights the importance of reviewing logs, not just relying on real-time feedback when validating security controls.
 ## Future Improvements
 
 - Test IDS/IPS between separate routed networks
