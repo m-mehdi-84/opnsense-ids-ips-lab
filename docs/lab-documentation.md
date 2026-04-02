@@ -174,6 +174,22 @@ During testing, an interesting behavior was observed with IDS and IPS.
 
 While sending continuous ICMP traffic (ping), no alerts were immediately visible in the GUI, even though IPS was actively blocking the traffic. However, when checking the system later, multiple alerts appeared in the Intrusion Detection logs.
 
+### Additional observation
+
+During testing, it became clear that where traffic is sent has a direct impact on IDS visibility.
+
+- Traffic sent directly to OPNsense (192.168.10.1) generated alerts immediately
+- Traffic between hosts in the same LAN did not always trigger alerts in real time
+
+This is because traffic within the same subnet may not pass through OPNsense in the same way, especially in a virtualized Hyper-V environment.
+
+This highlighted the importance of:
+- understanding traffic flow
+- choosing the correct test scenario
+- not relying only on immediate GUI feedback
+
+---
+
 This demonstrated that:
 
 - IDS continues to log and detect traffic even when IPS is actively dropping packets
