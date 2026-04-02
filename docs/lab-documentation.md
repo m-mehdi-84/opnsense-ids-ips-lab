@@ -168,6 +168,23 @@ This time the ping failed, showing that IPS was actively dropping the traffic.
 
 ---
 
+## Key Insight
+
+During testing, an interesting behavior was observed with IDS and IPS.
+
+While sending continuous ICMP traffic (ping), no alerts were immediately visible in the GUI, even though IPS was actively blocking the traffic. However, when checking the system later, multiple alerts appeared in the Intrusion Detection logs.
+
+This demonstrated that:
+
+- IDS continues to log and detect traffic even when IPS is actively dropping packets
+- Alerts may not always appear instantly in the GUI
+- Logs can be reviewed afterward to confirm detection events
+
+This reflects real-world behavior where detection (IDS) and prevention (IPS) work together:
+- **IDS = detects and logs**
+- **IPS = blocks traffic**
+
+This insight highlights the importance of log analysis, not just real-time testing, when verifying security controls.
 ## Validation Summary
 
 | Validation Item | Result |
