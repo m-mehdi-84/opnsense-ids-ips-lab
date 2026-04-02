@@ -120,37 +120,37 @@ traffic inside the same LAN does not always pass through OPNsense in a way that 
 ### 1. LAN Firewall Rules
 Shows the LAN firewall rules created in OPNsense, including rule order and descriptions.
 
-![LAN Firewall Rules](images/01-firewall-rules.png)
+![LAN Firewall Rules](docs/images/01-firewall-rules.png)
 
 ### 2. Allow LAN to Server Rule
 Shows the pass rule allowing traffic from the LAN network to the Windows Server.
 
-![Allow LAN to Server Rule](images/02-allow-lan-to-server.png)
+![Allow LAN to Server Rule](docs/images/02-allow-lan-to-server.png)
 
 ### 3. Block Server to LAN Rule
 Shows the block rule configured to restrict traffic from the Windows Server to the LAN network.
 
-![Block Server to LAN Rule](images/03-block-server-to-lan.png)
+![Block Server to LAN Rule](docs/images/03-block-server-to-lan.png)
 
 ### 4. IDS Settings
 Shows Intrusion Detection enabled on the LAN interface in OPNsense.
 
-![IDS Settings](images/04-ids-settings.png)
+![IDS Settings](docs/images/04-ids-settings.png)
 
 ### 5. User Defined IDS Rule
 Shows the custom IDS test rule used to generate an alert for ICMP traffic to OPNsense.
 
-![User Defined IDS Rule](images/05-ids-user-defined-rule.png)
+![User Defined IDS Rule](docs/images/05-ids-user-defined-rule.png)
 
 ### 6. Netmap Tunable
 Shows the `dev.netmap.admode = 2` tunable added to make IPS work correctly in the Hyper-V virtual environment.
 
-![Netmap Tunable](images/06-netmap-tunable.png)
+![Netmap Tunable](docs/images/06-netmap-tunable.png)
 
 ### 7. Suricata Log File
 Shows Suricata running successfully with rule reload activity and engine startup messages.
 
-![Suricata Log File](images/07-suricata-log-file.png)
+![Suricata Log File](docs/images/07-suricata-log-file.png)
 
 ---
 
