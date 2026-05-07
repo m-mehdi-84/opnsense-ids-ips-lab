@@ -158,7 +158,7 @@ Shows Suricata running successfully with rule reload activity and engine startup
 
 Detailed step-by-step guide is available in:
 
-`docs/lab-documentation.md`
+[Lab Documentation](docs/lab-documentation.md)
 
 Includes:
 
